@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
   validates :password, length: { maximum: 10 , minimum: 5 }
 
   has_secure_password
+
+  mount_uploader :avatar, AvatarUploader
 end
