@@ -1,0 +1,13 @@
+<% provide(:title, 'Users Detail') %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <% @users.each do |user| %>
+      <h1>
+        <%= image_tag(user.avatar_url) if user.avatar? %>
+        <%= user.name %>
+      </h1>
+      <% end %>
+    </section>
+  </aside>
+</div>

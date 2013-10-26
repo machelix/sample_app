@@ -8,6 +8,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def index
+    @users = User.all
+  end
+
   def create
     @user = User.new(user_params)    # Not the final implementation!
     #puts @user.avatar = params[:avatar]
@@ -15,10 +19,11 @@ class UsersController < ApplicationController
 
     if @user.save
       # Handle a successful save.
-      puts @user.avatar.url # => '/url/to/file.png'
-      puts @user.avatar.current_path # => 'path/to/file.png'
-      puts @user.avatar.identifier # => 'file.png'
+      #@user.avatar.url # => '/url/to/file.png'
+      #@user.avatar.current_path # => 'path/to/file.png'
+      #@user.avatar.identifier # => 'file.png'
 
+      sign_in @user
       flash[:success] = "Welcome to the Sample App! #{@user.avatar.current_path}"
       redirect_to @user
     else

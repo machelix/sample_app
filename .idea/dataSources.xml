@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1786352261">
+  <component name="DataSourceManagerImpl" format="xml" hash="2060871636">
     <data-source source="LOCAL" name="Rails sample_app: development" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="895e5bf6-dd26-48a9-a2aa-a7333b7cc8c2">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
@@ -14,6 +14,18 @@
       </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails sample_app: test" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="a9b15e69-6570-450d-a66d-f357db21f9a7">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails sample_app: cucumber" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1b3f4ec4-85d4-46b4-b706-c772169ef866">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
       <libraries>

@@ -34,4 +34,16 @@
       <index name="unique_schema_migrations" unique="true" columns="version"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails sample_app: cucumber" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1b3f4ec4-85d4-46b4-b706-c772169ef866">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
+      </library>
+    </libraries>
+  </data-source>
 </component>
