@@ -44,7 +44,7 @@ describe "Static pages" do
     let(:page_title) { 'Help' }
 
     it_should_behave_like "all static pages"
-    it { should have_content("#{base_title}") }
+    it { should have_content('Help') }
   end
 
   describe "About page" do

@@ -1,13 +1,12 @@
-<% provide(:title, 'Users Detail') %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <% @users.each do |user| %>
-      <h1>
-        <%= image_tag(user.avatar_url) if user.avatar? %>
-        <%= user.name %>
-      </h1>
-      <% end %>
-    </section>
-  </aside>
-</div>
+<% provide(:title, 'Users All') %>
+<h1>Users All</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+
+    <%= render @users %>
+
+</ul>
+
+<%= will_paginate %>

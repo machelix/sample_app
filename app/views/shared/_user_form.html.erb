@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for @user , :html => {:multipart => true} do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= image_tag(@user.avatar_url) if @user.avatar? %>
+        <%= f.label yield(:avatar_text) %>
+        <%= f.file_field :avatar %>
+        <%= f.hidden_field :avatar_cache %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.label :password_confirmation, "Confirm Password" %>
+        <%= f.password_field :password_confirmation %>
+
+        <%= f.submit yield(:submit_button), class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
