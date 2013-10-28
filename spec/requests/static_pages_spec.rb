@@ -19,6 +19,22 @@ describe "Static pages" do
 
     it_should_behave_like "all static pages"
     it { should_not have_title('| Home') }
+
+    describe "for signed-in users" do
+      let(:user) { FactoryGirl.create(:user) }
+      before do
+        FactoryGirl.create(:micropost, user: user, content: "Hello Amul Baby")
+        FactoryGirl.create(:micropost, user: user, content: "Donald Duck MMS")
+        sign_in user
+        visit root_path
+      end
+
+      it "should render the user's feed" do
+        user.feed.each do |item|
+          expect(page).to have_selector("li##{item.id}", text: item.content)
+        end
+      end
+    end
   end
 
   it "should have the right links on the layout" do
