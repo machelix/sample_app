@@ -4,3 +4,10 @@ development:
   cloud_id: b34814594dbfb8fa91104226f4462746
   # Uncomment the line below if your panda account is in the EU
   api_host: api-eu.pandastream.com
+
+production:
+  access_key: a4bdfcb635ea4a03be9c
+  secret_key: 9aace88aee5f74ff79a5
+  cloud_id: b34814594dbfb8fa91104226f4462746
+  # Uncomment the line below if your panda account is in the EU
+  api_host: api-eu.pandastream.com
