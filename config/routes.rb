@@ -8,6 +8,10 @@ SampleApp::Application.routes.draw do
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
 
+  match "/panda/authorize_upload", :to => "panda#authorize_upload" , via: 'post'
+  resources :videos
+  match "/video/new", :to => "videos#new" , via: 'get'
+
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
 

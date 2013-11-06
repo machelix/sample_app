@@ -1,0 +1,43 @@
+<%= form_for @video , :html => {:multipart => true} do |f| %>
+
+    <legend>Upload a new video</legend>
+
+    <label>Title</label>
+
+    <input type="text" name='video[title]' placeholder="Give a title">
+
+    <span class="help-block">Upload will start immediately after select</span>
+
+    <br/>
+
+    <input type="hidden" name="video[panda_video_id]" id="panda_video_id" />
+
+    <!-- upload progress bar (optional) -->
+    <div class='progress'><span id="progress-bar" class='bar'></span></div>
+
+    <!-- file selector -->
+    <div id="browse">Choose file</div>
+
+<% end %>
+
+<script>
+    var upl = panda.uploader.init({
+        'buttonId': 'browse',
+        'progressBarId': 'progress-bar',
+        'onQueue': function(files) {
+            $.each(files, function(i, file) {
+                upl.setPayload(file, {'csrf': "<%= form_authenticity_token %>"});
+            })
+        },
+        'onSuccess': function(file, data) {
+            $("#panda_video_id").val(data.id)
+        },
+        'onComplete': function(){
+            if($("#panda_video_id").val())
+                $("#new_video").submit();
+        },
+        'onError': function(file, message) {
+            alert(message);
+        }
+    });
+</script>

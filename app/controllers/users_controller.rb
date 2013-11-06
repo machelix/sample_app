@@ -10,6 +10,11 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
+
+    respond_to do |format|
+      format.html #show.html.erb
+      format.json { render json: @microposts, json: @users }
+    end
   end
 
   ## How to make index only available to admin users
@@ -17,6 +22,11 @@ class UsersController < ApplicationController
     ## This option should be only available to Admin users : not all the users
     #@users = User.all
     @users = User.paginate(page: params[:page])
+
+    respond_to do |format|
+      format.html  #index.html.erb
+      format.json { render json: @users }
+    end
   end
 
   def edit

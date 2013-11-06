@@ -43,6 +43,7 @@
     <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.2.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.2.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v1.1.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v0.8.8, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
@@ -50,13 +51,16 @@
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v1.0.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.0.4, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kgio (v2.8.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.8.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.0.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multipart-post (v1.2.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="panda (v1.6.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.15.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
@@ -66,6 +70,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rails_serve_static_assets (v0.0.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.3, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.0.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="raindrops (v0.12.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rmagick (v2.13.2, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
@@ -73,6 +78,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.13.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.13.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.13.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-hmac (v0.4.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v0.9.9, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.12, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
@@ -88,6 +94,7 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v1.1.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.38, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.1.1, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicorn (v4.6.3, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.0.7, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.4, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, RVM: ruby-1.9.3-p374 [global]) [gem]" level="application" />

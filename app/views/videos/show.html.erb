@@ -1,0 +1,53 @@
+<% provide(:title, @video.title) %>
+
+<h2><%= @video.title %></h2>
+
+<div>
+  <aside>
+    <% if @h264_encoding.success? %>
+
+        <h3>Content Player</h3>
+
+        <!-- HTML5 player -->
+        <video id="movie" width="<%= @h264_encoding.width %>" height="<%= @h264_encoding.height %>" preload="none"
+               poster="<%= @h264_encoding.screenshots.first %>" controls>
+          <source src="<%= @h264_encoding.url %>" type="video/mp4">
+        </video>
+
+        <h3>Preview</h3>
+
+        <ul class="thumbnails">
+          <% @h264_encoding.screenshots.each do |src| %>
+              <li class="span3">
+                <a class="thumbnail" href="#">
+                  <img src="<%= src %>"
+                       style="width: <%= @h264_encoding.width %>; height: <%= @h264_encoding.height %>">
+                </a>
+              </li>
+          <% end %>
+        </ul>
+
+    <% else %>
+
+        <div class='progress progress-striped progress-success'>
+          <span id="progress-bar" class='bar' style="width: <%= @h264_encoding.encoding_progress.to_i %>%"><%= @h264_encoding.encoding_progress %> %</span>
+        </div>
+
+        The video is still processing, refresh the page in a few seconds.
+    <% end %>
+</aside>
+    <p>Here's the raw Panda information:</p>
+
+  <section>
+    <h4>Video Input: </h4>
+    <pre><%= h @original_video.inspect %></pre>
+  </section>
+
+  <section>
+    <h4>Video Output H264:</h4>
+    <pre><%= h @h264_encoding.inspect %></pre>
+  </section>
+
+
+
+</div>

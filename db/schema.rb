@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131030200045) do
+ActiveRecord::Schema.define(version: 20131104233818) do
 
   create_table "microposts", force: true do |t|
     t.string   "content"
@@ -46,5 +46,12 @@ ActiveRecord::Schema.define(version: 20131030200045) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
+
+  create_table "videos", force: true do |t|
+    t.string   "title"
+    t.string   "panda_video_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

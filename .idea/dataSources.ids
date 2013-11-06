@@ -46,4 +46,16 @@
       </library>
     </libraries>
   </data-source>
+  <data-source source="LOCAL" name="Rails sample_app: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="7859e3b7-f46a-4a49-b0ce-07488904d76c">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:myapp_development</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
 </component>
