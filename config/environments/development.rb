@@ -26,4 +26,6 @@ SampleApp::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  ENV['PANDASTREAM_URL'] = "https://98a329b228f8e0f6e6cf:1f1ab3366e186e0069ea@api.pandastream.com/cd4875c2c50b58e042776ec5cb53351f"
 end

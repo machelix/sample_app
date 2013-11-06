@@ -81,4 +81,6 @@ SampleApp::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
   config.force_ssl = true
+
+  ENV['PANDASTREAM_URL'] = "https://98a329b228f8e0f6e6cf:1f1ab3366e186e0069ea@api.pandastream.com/cd4875c2c50b58e042776ec5cb53351f"
 end
